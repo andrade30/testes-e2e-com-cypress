@@ -9,8 +9,6 @@ module.exports = defineConfig({
     },
     defaultCommandTimeout: 15000,
     supportFile: "cypress/support/e2e.js",
-    setupNodeEvents(on, config) {
-      allowCypressEnv: false;
-    },
   },
+  projectId: "ngu17h",
 });
