@@ -7,6 +7,10 @@ module.exports = defineConfig({
     env: {
       viewportWidthBreakpoint: 768,
     },
+    setupNodeEvents(on, config) {
+      require("@cypress/grep/src/plugin")(config);
+      return config;
+    },
     defaultCommandTimeout: 15000,
     supportFile: "cypress/support/e2e.js",
   },
