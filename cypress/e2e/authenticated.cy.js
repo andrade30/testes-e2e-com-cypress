@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+/// <reference path="../support/commands.d.ts" />
+
 import { faker } from '@faker-js/faker';
 
 describe("Scenarios where authentication is a pre-condition", () => {

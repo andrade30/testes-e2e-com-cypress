@@ -1,3 +1,5 @@
+/// <reference path="../support/commands.d.ts" />
+
 import { faker } from "@faker-js/faker/locale/en";
 describe("Sign up", () => {
   const emailAddress = `${faker.string.uuid()}@${Cypress.env("MAILOSAUR_SERVER_ID")}.mailosaur.net`;
